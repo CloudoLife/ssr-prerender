@@ -1,0 +1,27 @@
+{
+  "name": "ssr-prerender",
+  "version": "0.1.0",
+  "description": "Prerender - Dynamic Rendering for Effective JavaScript SEO | Prerender",
+  "main": "server.js",
+  "dependencies": {
+    "prerender": "^5.8.0",
+    "prerender-memory-cache": "^1.0.2",
+    "prerender-redis-cache": "^0.2.2",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Prerender",
+    "SEO",
+    "SSR",
+    "Server-side Render",
+    "JavaScript",
+    "Dynamic Rendering"
+  ],
+  "author": "Benjamin CloudoLife <benjamincloudolife@gmail.com>",
+  "license": "ISC"
+}

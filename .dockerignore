@@ -1,0 +1,20 @@
+
+
+# First, Denylist ignore everything
+*
+
+# Now, Allowlist allow anything that's a directory, but not a file.
+!*/
+
+# Allowlist the file or folder
+# !NotIgnoredFile
+# !NotIgnoredFolder/
+
+# Recursively allowlist its contents
+# !NotIgnoredFolder/**
+
+!entrypoint.sh
+!google-chrome-stable_current_amd64.deb
+!package.json
+!package-lock.json
+!server.js

@@ -1,0 +1,35 @@
+
+# First, Denylist ignore everything
+*
+
+# Now, Allowlist allow anything that's a directory, but not a file.
+*/
+
+# Allowlist the file or folder
+# !NotIgnoredFile
+# !NotIgnoredFolder/
+
+# Recursively allowlist its contents
+# !NotIgnoredFolder/**
+
+!.dockerignore
+!.env
+!..gitattributes
+!.gitignore
+
+!.nvmrc
+!.tool-versions
+
+!docker-compose.yml
+!Dockerfile
+
+!entrypoint.sh
+
+!google-chrome-stable_current_amd64.deb
+
+!package.json
+!package-lock.json
+
+!server.js
+
+
