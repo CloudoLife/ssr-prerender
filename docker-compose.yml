@@ -4,11 +4,8 @@ services:
 
   app:
     build: .
-    environment:
-      # prerender-redis-cache/prerenderRedisCache.js at master · JonathanBennett/prerender-redis-cache
-      # https://github.com/JonathanBennett/prerender-redis-cache/blob/master/lib/prerenderRedisCache.js
-      REDIS_URL: "redis://redis:6379/0"
-      PAGE_TTL: 3600
+    env_file:
+      - .env
     image: cloudolife/ssr-prerender:latest
     ports:
       - "3000:3000"

@@ -1,0 +1,35 @@
+' Deployment Diagram syntax and features
+' https://plantuml.com/deployment-diagram
+@startuml
+title SSR-Prerender Deployment\n
+
+usecase SEOSpiderBots [
+  SEO Spider Bots
+  (GoogleBot, BaiduBot, etc.)
+]
+
+cloud CloudInternat [
+  Internat
+]
+
+component SSR {
+  component SSRPrerender [
+    SSR Prerender
+  ]
+  component SSRCache [
+    SSR Cache 
+    (Memory / Redis)
+  ]
+}
+
+component TargetWeb [
+  Target Web
+]
+
+SSRPrerender -- SSRCache : cached
+SSRPrerender -- TargetWeb : proxy
+
+SEOSpiderBots -- CloudInternat
+
+CloudInternat -- SSRPrerender
+@enduml
