@@ -14,7 +14,7 @@ It have some advantages:
 
 ## Deployment Diagram
 
-![SSR-Prerender Deployment](https://github.com/CloudoLife/ssr-prerender/blob/master/SSR-Prerender%20Deployment.png?raw=true)
+![SSR-Prerender Deployment](https://github.com/CloudoLife/ssr-prerender/blob/master/SSR-Prerender%20Deployment%20v1.1.png?raw=true)
 
 Powered by [PlantUML](https://plantuml.com/deployment-diagram)
 
