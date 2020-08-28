@@ -8,8 +8,10 @@ usecase SEOSpiderBots [
   (GoogleBot, BaiduBot, etc.)
 ]
 
-cloud CloudInternat [
-  Internat
+actor User
+
+component Browser [
+  Chrome, Safari, FireFox
 ]
 
 component SSR {
@@ -29,7 +31,8 @@ component TargetWeb [
 SSRPrerender -- SSRCache : cached
 SSRPrerender -- TargetWeb : proxy
 
-SEOSpiderBots -- CloudInternat
+SEOSpiderBots -- SSRPrerender
 
-CloudInternat -- SSRPrerender
+User -- Browser
+Browser -- TargetWeb : direct
 @enduml
